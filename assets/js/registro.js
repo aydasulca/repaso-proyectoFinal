@@ -16,14 +16,18 @@ window.onload=function(){
     this.correo= correo;
     this.password= password;
   }
+/*
   var arr = [];
   var nuevoUsuario= new Usuario(nombre, apellido, correo, password)
   arr.push(nuevoUsuario);
-
+  */
   if(nombre!="" && apellido!="" && correo!="" && password!=""){
+
     if(formatoCorreo.test(correo) != true){
-      alert("correo falso");
-    }
+      alert("El correo debe tener un formato valido");
+      }
+      localStorage.setItem("bienvenidaCoder",JSON.stringify(new Usuario(nombre, apellido, correo, password)));
+      window.location="bienvenidaCoder.html";
 
   }else{
     alert("Todos los campos son obligatorios");
