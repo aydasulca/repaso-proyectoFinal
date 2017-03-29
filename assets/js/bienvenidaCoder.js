@@ -10,5 +10,12 @@ window.onload=function(){
   apellido.innerHTML= usuario.apellido;
   correo.innerHTML= usuario.correo;
   password.innerHTML= usuario.password;
-
 }
+
+/*
+var botonEditar= document.getElementById('buttonEditar');
+botonEditar.addEventListener("click", function({
+  localStorage.setItem("editarDatos",JSON.stringify(botonEditar);
+  window.location="registro.html";
+}))
+*/

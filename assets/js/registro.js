@@ -34,8 +34,7 @@ window.onload=function(){
   }
 
  })
-}
-
+//var usuario= JSON.parse(localStorage.getItem("editarDatos"));
 
 
 
